@@ -1,14 +1,21 @@
 
 import './App.css';
 import Navbar from './Components/Navbar';
+import TextForm from './Components/TextForm';
+
+
 
 function App() {
   return (
     <>
     
     <div >
-     <Navbar />
+     <Navbar title="eCommerce"/> 
+     <div className="container my-3">
      
+     <TextForm title="Use This Text"/>
+     </div>
+    
     </div>
     </>
   );
