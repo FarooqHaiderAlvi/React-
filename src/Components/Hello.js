@@ -1,11 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-class HelloWorld extends Component {
-  render() {
-    return (
-      <h1>Hello World</h1>
-    );
-  }
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: './public/assets/img.jpg',
+  imageSize: 90,
+};
+
+export default function Hello() {
+  return (
+    <div>
+      <img src={user.imageUrl} alt={'photo of '+user.name} 
+      
+      style={{
+        width: user.imageSize,
+        height: user.imageSize
+      }}
+
+      />
+    </div>
+  )
 }
-
-export default HelloWorld;

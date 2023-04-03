@@ -2,6 +2,12 @@ import React ,{useState} from 'react'
 
 export default function TextForm(props) {
     const [text,setText]=useState("Enter your text");
+     const [count,setCount]=useState(0);
+
+     const addOne=()=>{
+        let temp=count+1;
+        setCount(temp);
+     }
 
     function handleUpperCase(){
         console.log("click handle is clicked");
@@ -15,6 +21,7 @@ export default function TextForm(props) {
     const letterCaseChange=(event)=>{
         setText(event.target.value);
     }
+
     return (
         <>
         <div className='container'>
@@ -26,11 +33,14 @@ export default function TextForm(props) {
                 </div>
            <button className="btn btn-primary mx-2" onClick={handleUpperCase}>Convert to UpperCase</button>
            <button className="btn btn-primary mx-2" onClick={handleLowerCase}>Convert to lowerCase</button>
+           <button className="btn btn-primary mx-2" onClick={addOne}>coutn</button>
+          
+           
         </div>
         <div className="container">
             <h3>letter count ={'>'} {text.length}</h3>
             <h3>word count ={'>'} {text.split(" ").length}</h3>
-
+           <div>{count}</div>
         </div>
 
         </>

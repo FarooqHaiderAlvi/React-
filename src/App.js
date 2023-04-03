@@ -2,6 +2,8 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
+import Counter from './Components/Counter';
+
 
 
 
@@ -14,6 +16,7 @@ function App() {
      <div className="container my-3">
      
      <TextForm title="Use This Text"/>
+     <Counter/>
      </div>
     
     </div>
