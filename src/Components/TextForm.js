@@ -4,9 +4,10 @@ export default function TextForm(props) {
     const [text,setText]=useState("Enter your text");
      const [count,setCount]=useState(0);
 
-     const addOne=()=>{
-        let temp=count+1;
-        setCount(temp);
+     const reset=()=>{
+        let temp='';
+        console.log('reset handled');
+        setText(temp);
      }
 
     function handleUpperCase(){
@@ -33,14 +34,14 @@ export default function TextForm(props) {
                 </div>
            <button className="btn btn-primary mx-2" onClick={handleUpperCase}>Convert to UpperCase</button>
            <button className="btn btn-primary mx-2" onClick={handleLowerCase}>Convert to lowerCase</button>
-           <button className="btn btn-primary mx-2" onClick={addOne}>coutn</button>
+           <button className="btn btn-primary mx-2" onClick={reset}>Reset</button>
           
            
         </div>
         <div className="container">
             <h3>letter count ={'>'} {text.length}</h3>
             <h3>word count ={'>'} {text.split(" ").length}</h3>
-           <div>{count}</div>
+          
         </div>
 
         </>
