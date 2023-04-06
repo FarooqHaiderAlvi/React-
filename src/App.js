@@ -1,6 +1,6 @@
 
 import './App.css';
-import About from './Components/About';
+import CountTogether from './Components/CountTogether';
 import Navbar from './Components/Navbar';
 
 
@@ -16,7 +16,8 @@ function App() {
      <Navbar title="eCommerce"/> 
      <div className="container my-3">
      
-     <About/>
+     {/* <About/> */}
+     <CountTogether/>
   
      </div>                       
                                     
