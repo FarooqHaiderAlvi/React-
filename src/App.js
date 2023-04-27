@@ -1,7 +1,6 @@
+import React from 'react';
+import FrontPage from './Components/FrontPage';
 
-import './App.css';
-import CountTogether from './Components/CountTogether';
-import Navbar from './Components/Navbar';
 
 
 
@@ -11,17 +10,18 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <>
-    
-    <div >
-     <Navbar title="eCommerce"/> 
-     <div className="container my-3">
-     
-     {/* <About/> */}
-     <CountTogether/>
-  
-     </div>                       
-                                    
-    </div>                         
+       
+       <FrontPage/>
+
+      {/* <div >
+        <Navbar title="Self" />
+        <div className="container my-3">
+
+
+
+        </div>
+
+      </div> */}
     </>
   );
 }
