@@ -4,29 +4,22 @@ import FrontPage from './Components/FrontPage';
 
 
 
+ 
+
+// npm start to run react project 
 
 
-
-function App() {
+export default function App() {
   return (
     <>
        
-       <FrontPage/>
-
-      {/* <div >
-        <Navbar title="Self" />
-        <div className="container my-3">
-
-
-
-        </div>
-
-      </div> */}
+     <FrontPage/>
+     
     </>
   );
 }
 
-export default App;
+
 
 //if you are using jsx in react you can only return one element at a time
 //we must wrap our jsx into one tag like <> </> and it is called jsx fragment(<></>)

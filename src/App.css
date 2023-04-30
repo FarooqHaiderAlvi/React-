@@ -68,9 +68,7 @@
 }
 
 /* Here are just some visual styles. 🖌 */
-a{
-    color: black;
-}
+
 
 
 .title {
@@ -149,3 +147,24 @@ a{
   body {
     font-family: "MyCustomFont", sans-serif;
   }
+  .pink{
+    background-color: rgb(255, 192, 203);
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  
+  }
+a:hover{
+  color: rgb(116, 110, 110);
+}
+.noStyle{
+  border: none;
+  background: none;
+  color: white;
+}
+.noStyle:hover{
+   color: rgb(217, 221, 224);
+}

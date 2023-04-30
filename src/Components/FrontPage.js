@@ -166,8 +166,16 @@ export default function FrontPage() {
         </div>
 
       </div>
-
-
+           
+           <div className="container pink">
+            <div className="row">
+              <div className="col">
+              <h2 className='text-center my-2 font-weight-bold'>We are pleased to offer great video lectures and notes to help you achieve academic succuess</h2>
+    
+              </div>
+            </div>
+           </div>
+        
       <div className="container py-4">
         <div className="row">
 
@@ -194,6 +202,6 @@ export default function FrontPage() {
       </div>
 
 
-    </div>
+    </div> 
   )
 }
