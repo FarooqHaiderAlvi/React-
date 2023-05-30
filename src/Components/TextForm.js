@@ -1,5 +1,5 @@
 import React ,{useState} from 'react'
-
+import PropTypes from 'prop-types';
 export default function TextForm(props) {
     const [text,setText]=useState("Enter your text");
      const [count,setCount]=useState(0);
@@ -47,3 +47,8 @@ export default function TextForm(props) {
         </>
     )
 }
+
+TextForm.propTypes = {
+    title: PropTypes.string,
+   
+  };

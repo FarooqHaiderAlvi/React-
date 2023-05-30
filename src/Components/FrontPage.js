@@ -14,8 +14,9 @@ import '../App.css'
 
 export default function FrontPage() {
   return (
-
-
+    
+   
+    
     <div className='container-fluid back' style={{fontFamily: "MyCustomFont" }}>
       <Navbar />
 

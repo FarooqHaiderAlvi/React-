@@ -11,7 +11,7 @@ console.log("click handled");
   }
 
   return (
-      <button className='' onClick={handleClick}>{value}</button>
+      <button className='' onClick={handleClick}>{props.value}</button>
   )
 }
 

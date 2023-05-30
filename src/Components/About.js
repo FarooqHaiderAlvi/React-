@@ -2,34 +2,34 @@ import React, { useState } from 'react'
 
 
 export default function About() {
-    const [mystyle,setMYStyle]=useState({
-        color:'black',
-        
-        border:'1px solid white'
-       })
-      
-       const [btnText,setBtnText]=useState("Enable Dark Mode");
-     const switchMode=()=>{
-       
-        if(mystyle.color=='black'){
+    const [mystyle, setMYStyle] = useState({
+        color: 'black',
+
+        border: '1px solid white'
+    })
+
+    const [btnText, setBtnText] = useState("Enable Dark Mode");
+    const switchMode = () => {
+
+        if (mystyle.color == 'black') {
             setMYStyle({
-                color:'white',
-               backgroundColor:'black',
-                border:'1px solid white'
+                color: 'white',
+                backgroundColor: 'black',
+                border: '1px solid white'
             })
             setBtnText("Enable Light Mode");
         }
-        else{
+        else {
             setMYStyle({
-                color:'black',
-             //  backgroundColor:'black',
-                border:'1px solid white'
+                color: 'black',
+                //  backgroundColor:'black',
+                border: '1px solid white'
             })
             setBtnText("Enable Dark Mode");
         }
-     }
+    }
     return (
-        <div classNameName="container" style={mystyle}>
+        <div className="container" style={mystyle}>
             <div className="accordion" id="accordionExample">
                 <div className="card" style={mystyle}>
                     <div className="card-header" id="headingOne">
@@ -42,41 +42,40 @@ export default function About() {
 
                     <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div className="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit, enim .
                         </div>
                     </div>
                 </div>
                 <div className="card" style={mystyle}>
                     <div className="card-header" id="headingTwo">
                         <h5 className="mb-0">
-                            <button style={mystyle}  className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button style={mystyle} className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Collapsible Group Item #2
                             </button>
                         </h5>
                     </div>
                     <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div className="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit,
+                        </div>
+                    </div>
+                    <div className="card" style={mystyle}>
+                        <div className="card-header" id="headingThree">
+                            <h5 className="mb-0">
+                                <button style={mystyle} className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div className="card-body">
+                                Anim pariatur cliche reprehenderit,     </div>
                         </div>
                     </div>
                 </div>
-                <div className="card" style={mystyle}>
-                    <div className="card-header" id="headingThree">
-                        <h5 className="mb-0">
-                            <button style={mystyle}  className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div className="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
+                <div className="container">
+                    <button onClick={switchMode} className='btn btn-primary my-3'>{btnText}</button>
                 </div>
-            </div>
-            <div className="container">
-                <button onClick={switchMode} className='btn btn-primary my-3'>{btnText}</button>
             </div>
         </div>
     )

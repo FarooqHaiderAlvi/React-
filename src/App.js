@@ -1,10 +1,10 @@
 import React from 'react';
-import FrontPage from './Components/FrontPage';
+
+import FcitUni from './Components/FcitUni';
 
 
 
 
- 
 
 // npm start to run react project 
 
@@ -12,9 +12,8 @@ import FrontPage from './Components/FrontPage';
 export default function App() {
   return (
     <>
-       
-     <FrontPage/>
      
+    <FcitUni/>
     </>
   );
 }
