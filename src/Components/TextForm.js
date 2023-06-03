@@ -4,24 +4,17 @@ import DarkModeNavbar from './DarkModeNavbar';
 import About from './About';
 import Alert from './Alert';
 
-// import {
-//     BrowserRouter as Router,
-//     Route,
-//     Routes,
-//     Link,
-//     useRouteMatch,
-//     useParams
-// } from "react-router-dom";
+
 
  
 
 
 export default function TextForm(props) {
 
-    // const [mode, setMode] = useState("light");
-    // const [color, setColor] = useState("dark");
+    const [mode, setMode] = useState("light");
+    const [color, setColor] = useState("dark");
 
-    // const [alert, setAlert] = useState(null);
+    const [alert, setAlert] = useState(null);
 
 
     const [text, setText] = useState("Enter your text");
@@ -45,35 +38,35 @@ export default function TextForm(props) {
     const letterCaseChange = (event) => {
         setText(event.target.value);
     }
-    // const toggleMode = () => {
+    const toggleMode = () => {
 
-    //     if (mode === 'light') {
-    //         setMode('dark');
-    //         setColor('white');
-    //         showAlert("Dark mode has been enabled", "success");
+        if (mode === 'light') {
+            setMode('dark');
+            setColor('white');
+            showAlert("Dark mode has been enabled", "success");
 
-    //     }
-    //     else {
-    //         setMode('light');
-    //         setColor('black');
-    //         showAlert("Dark mode has been disabled", "success");
-    //     }
-    // }
-    // const showAlert = (message, type) => {
-    //     setAlert({
-    //         msg: message,
-    //         type: type
-    //     }
+        }
+        else {
+            setMode('light');
+            setColor('black');
+            showAlert("Dark mode has been disabled", "success");
+        }
+    }
+    const showAlert = (message, type) => {
+        setAlert({
+            msg: message,
+            type: type
+        }
 
-    //     )
-    // }
+        )
+    }
 
     return (
         <>
         
 
-            {/* <DarkModeNavbar mode={mode} color={color} toggle={toggleMode} /> */}
-            {/* <Alert alrt={alert} /> */}
+            <DarkModeNavbar mode={mode} color={color} toggle={toggleMode} />
+            <Alert alrt={alert} />
             <div className='container'>
 
 

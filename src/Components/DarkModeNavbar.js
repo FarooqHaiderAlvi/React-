@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+
 
 export default function DarkModeNavbar(props) {
     const [mode, setMode] = ('true')
@@ -15,10 +15,10 @@ export default function DarkModeNavbar(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className={`nav-link active text-${props.color}`} aria-current="page" to="/">Home</Link>
+                            <a className={`nav-link active text-${props.color}`} aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link text-${props.color}`} to="./About">About</Link>
+                            <a className={`nav-link text-${props.color}`} href="#">About</a>
                         </li>
                      
                         <li className="nav-item">
