@@ -1,6 +1,7 @@
 import React from 'react';
 
-import FcitUni from './Components/FcitUni';
+
+import TextForm from './Components/TextForm';
 
 
 
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <>
      
-    <FcitUni/>
+    <TextForm/>
     </>
   );
 }
