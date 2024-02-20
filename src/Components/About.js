@@ -29,7 +29,7 @@ export default function About() {
         }
     }
     return (
-        <div className="container" style={mystyle}>
+        <div className="container mt-3" style={mystyle}>
             <div className="accordion" id="accordionExample">
                 <div className="card" style={mystyle}>
                     <div className="card-header" id="headingOne">

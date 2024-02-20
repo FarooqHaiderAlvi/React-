@@ -1,23 +1,22 @@
-import React, { useCallback, useState } from 'react'
+import React, {  useState } from 'react'
 
+
+
+import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 
 
 
 
-
 // npm start to run react project 
-
+import Main from './Main';
 
 export default function App() {
 
 
-
-
   return (
     <>
-      <TextForm/>
-
+      <Main/>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
 import im1 from '../Images/im1.jpg'
 import im2 from '../Images/im2.jpg'
 import im3 from '../Images/im3.png'
@@ -18,7 +18,7 @@ export default function FrontPage() {
    
     
     <div className='container-fluid back' style={{fontFamily: "MyCustomFont" }}>
-      <Navbar />
+     {/* // <Navbar /> */}
 
       <div className="container my-4 py-1 ">
         <div className="row d-flex align-items-center">
